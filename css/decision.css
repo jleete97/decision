@@ -1,0 +1,42 @@
+div.header {
+	width: 100%;
+	height: 25%;
+}
+
+div.node {
+	width: 100%;
+	border: solid black 1px;
+#	background-color: blue;
+	display: none;
+}
+
+div.node span.question {
+#	float: left;
+	width: 60%;
+	font-weight: bold;
+#	background-color: green;
+}
+
+div.node span.answers {
+#	float: right;
+	width: 40%;
+#	background-color: yellow;
+	margin-right: 50px;
+}
+
+button.pick-answer {
+	width: 80px;
+	height: 25px;
+#	background-color: red;
+}
+div.node span.more {
+#	float: right;
+	width: 45px;
+#	background-color: #ffcc66;
+}
+
+div.node div.detail {
+	width: 100%;
+#	background-color: cyan;
+	display: none;
+}

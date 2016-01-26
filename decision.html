@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Decisions</title>
+  <meta name="description" content="">
+  <meta name="author" content="Jonathan Leete">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/decision.js"></script>
+  <script src="js/decision_data.js>"></script>
+  
+  <link rel="stylesheet" href="css/decision.css">
+  
+  <script type="text/javascript">
+  	$(document).ready(setupDecisionTree);
+  </script>
+</head>
+
+<body>
+
+<header>
+  <h1>Decision Maker</h1>
+  <img src="image/header.jpg" class="logo" height="200" width="200"/>
+</header>
+<nav>
+  <p><a href="/">Home</a></p>
+  <p><a href="/contact">Contact</a></p>
+</nav>
+
+<div class="node" id="1">
+	<span class="question">Category?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="2">Animal</option>
+			<option value="3">Vegetable</option>
+			<option value="4">Mineral</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>What category of object does your choice belong to?</p>
+		<p>An <b>animal</b> is a creature that moves by itself.</p>
+		<p>A <b>vegetable</b> is a plant that uses photosynthesis.</p>
+		<p>A <b>mineral</b> is anything else.</p>
+	</div>
+</div>
+
+<div class="node" id="2">
+	<span class="question">Kind of animal?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="5">Reptile</option>
+			<option value="6">Mammal</option>
+			<option value="7">Bird</option>
+			<option value="8">Fish</option>
+			<option value="9">Other</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>What kind of animal are you thinking of?</p>
+		<p>A <b>reptile</b> has scales.</p>
+		<p>A <b>mammal</b> is warm-blooded, has fur, and almost always bears live young.</p>
+		<p>...</p>
+	</div>
+</div>
+
+<div class="node" id="3">
+	<span class="question">Is your plant a tree?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="10">Yes</option>
+			<option value="11">No</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>Trees stand in the ground, with trunks, branches and roots.</p>
+	</div>
+</div>
+
+<div class="node" id="4">
+	<span class="question">Is your object artificial?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="10">Yes</option>
+			<option value="11">No</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>Artificial objects are produced by human activity.</p>
+	</div>
+</div>
+
+<div class="node" id="5">
+	<span class="question">Is this reptile extinct?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="12">Yes</option>
+			<option value="13">No</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>"Extinct" reptiles lived in the past, but are no longer alive.</p>
+	</div>
+</div>
+
+<div class="node" id="6">
+	<span class="question">Is this mammal aquatic?</span>
+	<span class="answers">
+		<select class="answer">
+			<option></option>
+			<option value="14">Yes</option>
+			<option value="15">No</option>
+		</select>
+	</span>
+	<span><button class="pick-answer">Go</button></span>
+	<span class="more"><a>?</a></span>
+	<div class="detail">
+		<p>Aquatic mammals live in water.</p>
+	</div>
+</div>
+
+<div class="node" id="7">
+	<p>Your animal is a chicken.</p>
+</div>
+
+<footer>
+ <p>&copy; Copyright  by Jonathan Leete</p>
+</footer>
+
+</body>
+</html>
