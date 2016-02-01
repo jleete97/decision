@@ -19,11 +19,16 @@
   
   <script src="js/jquery-1.11.3.js"></script>
   <script src="js/decision.js"></script>
+  <!-- script src="js/decision_data.js>"></script -->
   
   <link rel="stylesheet" href="css/decision.css">
   
   <script type="text/javascript">
-  	$(document).ready(setupDecisionTree);
+	$(document).ready(function() {
+		$.getJSON("js/decision_data_small.js", function(data) {
+			initialize(data);
+	    });
+	});
   </script>
 </head>
 
@@ -37,6 +42,10 @@
   <p><a href="/">Home</a></p>
   <p><a href="/contact">Contact</a></p>
 </nav>
+
+<div id="main">
+	<!-- Hold all questions. -->
+</div>
 
 <div class="node" id="1">
 	<span class="question">Category?</span>

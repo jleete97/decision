@@ -1,3 +1,8 @@
+div#main {
+	width: 100%;
+}
+
+
 div.header {
 	width: 100%;
 	height: 25%;
@@ -33,6 +38,10 @@ div.node span.more {
 #	float: right;
 	width: 45px;
 #	background-color: #ffcc66;
+}
+
+div.node span.answer {
+	background-color: lightgrey;
 }
 
 div.node div.detail {
